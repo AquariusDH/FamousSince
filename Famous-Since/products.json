@@ -1,0 +1,274 @@
+[
+  {
+    "id": "fsb-hoodie-001",
+    "title": "Famous Since Birth \u2013 Hoodie",
+    "price": 68,
+    "badge": "Core",
+    "stripe_url": "https://buy.stripe.com/test_11111111111111",
+    "images": [
+      "/assets/images/fsb-hoodie-1.jpg",
+      "/assets/images/fsb-hoodie-2.jpg",
+      "/assets/images/fsb-hoodie-3.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-1.jpg",
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Midweight fleece. Boxy fit. Screenprint front.",
+    "details": {
+      "fabric": "80% cotton / 20% poly",
+      "fit": "Boxy, true to size",
+      "care": "Cold wash, hang dry"
+    },
+    "tags": [
+      "hoodie",
+      "core",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-hoodie-002",
+    "title": "Famous Since Day One \u2013 Hoodie",
+    "price": 72,
+    "badge": "Seasonal",
+    "stripe_url": "",
+    "images": [
+      "/assets/images/fsb-hoodie-2.jpg",
+      "/assets/images/fsb-hoodie-3.jpg",
+      "/assets/images/fsb-hoodie-1.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg",
+      "/assets/images/lookbook-1.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Midweight fleece. Kangaroo pocket. Puff print back.",
+    "details": {
+      "fabric": "75% cotton / 25% poly",
+      "fit": "Relaxed, drop shoulder",
+      "care": "Machine wash cold, lay flat to dry"
+    },
+    "tags": [
+      "hoodie",
+      "seasonal",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-hoodie-003",
+    "title": "Famous Since No Cosign \u2013 Hoodie",
+    "price": 74,
+    "badge": "Limited",
+    "stripe_url": "https://buy.stripe.com/test_22222222222222",
+    "images": [
+      "/assets/images/fsb-hoodie-3.jpg",
+      "/assets/images/fsb-hoodie-1.jpg",
+      "/assets/images/fsb-hoodie-2.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-3.jpg",
+      "/assets/images/lookbook-1.jpg",
+      "/assets/images/lookbook-2.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Thick fleece. Embroidered chest. Numbered hem tag.",
+    "details": {
+      "fabric": "85% cotton / 15% poly",
+      "fit": "Oversized",
+      "care": "Gentle cycle, hang dry"
+    },
+    "tags": [
+      "hoodie",
+      "limited",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-tee-001",
+    "title": "Famous Since 24/7 \u2013 Tee",
+    "price": 36,
+    "badge": "Core",
+    "stripe_url": "https://buy.stripe.com/test_33333333333333",
+    "images": [
+      "/assets/images/fsb-tee-1.jpg",
+      "/assets/images/fsb-tee-2.jpg",
+      "/assets/images/fsb-tee-3.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-1.jpg",
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "200gsm heavyweight. Rib collar. Screenprint front.",
+    "details": {
+      "fabric": "100% cotton",
+      "fit": "Classic",
+      "care": "Wash cold, tumble dry low"
+    },
+    "tags": [
+      "tee",
+      "core",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-tee-002",
+    "title": "Famous Since Las Vegas \u2013 Tee",
+    "price": 38,
+    "badge": "Seasonal",
+    "stripe_url": "",
+    "images": [
+      "/assets/images/fsb-tee-2.jpg",
+      "/assets/images/fsb-tee-3.jpg",
+      "/assets/images/fsb-tee-1.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg",
+      "/assets/images/lookbook-1.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Pigment-dyed tee. High-contrast print.",
+    "details": {
+      "fabric": "100% cotton",
+      "fit": "Relaxed",
+      "care": "Wash inside out, hang dry"
+    },
+    "tags": [
+      "tee",
+      "seasonal",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-tee-003",
+    "title": "Famous Since No Shortcuts \u2013 Tee",
+    "price": 40,
+    "badge": "Limited",
+    "stripe_url": "https://buy.stripe.com/test_44444444444444",
+    "images": [
+      "/assets/images/fsb-tee-3.jpg",
+      "/assets/images/fsb-tee-1.jpg",
+      "/assets/images/fsb-tee-2.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-3.jpg",
+      "/assets/images/lookbook-1.jpg",
+      "/assets/images/lookbook-2.jpg"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "description": "Garment-dyed tee. Crackle ink print.",
+    "details": {
+      "fabric": "100% cotton",
+      "fit": "Boxy",
+      "care": "Cold wash, dry flat"
+    },
+    "tags": [
+      "tee",
+      "limited",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-hat-001",
+    "title": "Famous Since \u2013 6-Panel",
+    "price": 32,
+    "badge": "Core",
+    "stripe_url": "",
+    "images": [
+      "/assets/images/fsb-hat-1.jpg",
+      "/assets/images/fsb-hat-2.jpg",
+      "/assets/images/fsb-hat-3.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-1.jpg",
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg"
+    ],
+    "sizes": [
+      "OS"
+    ],
+    "description": "Cotton twill cap with strapback.",
+    "details": {
+      "fabric": "100% cotton",
+      "fit": "Adjustable",
+      "care": "Spot clean only"
+    },
+    "tags": [
+      "hat",
+      "core",
+      "black"
+    ]
+  },
+  {
+    "id": "fsb-hat-002",
+    "title": "Famous Since \u2013 Beanie",
+    "price": 28,
+    "badge": "Seasonal",
+    "stripe_url": "https://buy.stripe.com/test_55555555555555",
+    "images": [
+      "/assets/images/fsb-hat-2.jpg",
+      "/assets/images/fsb-hat-3.jpg",
+      "/assets/images/fsb-hat-1.jpg"
+    ],
+    "lookbook": [
+      "/assets/images/lookbook-2.jpg",
+      "/assets/images/lookbook-3.jpg",
+      "/assets/images/lookbook-1.jpg"
+    ],
+    "sizes": [
+      "OS"
+    ],
+    "description": "Rib knit beanie with woven label.",
+    "details": {
+      "fabric": "100% acrylic",
+      "fit": "One size",
+      "care": "Hand wash cold"
+    },
+    "tags": [
+      "hat",
+      "seasonal",
+      "black"
+    ]
+  }
+]
