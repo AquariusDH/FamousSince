@@ -3,15 +3,95 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Famous Since</title>
+  <title>Famous Since — Limited Streetwear Drops</title>
+  <meta name="description" content="Famous Since — no cosign. No shortcuts. Just the grind. Limited streetwear drops." />
   <meta name="theme-color" content="#0A0A0A" />
+
+  <!-- Favicon / Manifest -->
   <link rel="icon" href="/assets/favicon.ico" sizes="any">
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Famous Since — Limited Drops">
+  <meta property="og:description" content="No cosign. No shortcuts. Just the grind.">
+  <meta property="og:image" content="https://famous-since.vercel.app/assets/og-mascot.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://famous-since.vercel.app/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Famous Since — Limited Drops">
+  <meta name="twitter:description" content="No cosign. No shortcuts. Just the grind.">
+  <meta name="twitter:image" content="https://famous-since.vercel.app/assets/og-mascot.jpg">
+
+  <!-- Site CSS -->
   <link rel="stylesheet" href="/styles.css" />
+
+  <!-- Tiny critical helpers (safe overrides only for quick wins) -->
+  <style>
+    /* Skip link */
+    .skip-link{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+    .skip-link:focus{left:1rem;top:1rem;width:auto;height:auto;padding:.6rem .8rem;background:#fff;color:#000;border-radius:.5rem;z-index:9999}
+
+    /* Hero mascot overlay */
+    .hero__fx img{
+      position:absolute; inset:auto 5% 6% auto; opacity:.9;
+      mix-blend-mode:lighten; filter:drop-shadow(0 30px 50px rgba(0,0,0,.6));
+      max-width:min(38vw, 900px); height:auto; pointer-events:none;
+    }
+    @media (max-width: 768px){
+      .hero__fx img{inset:auto 0 0 0; margin-inline:auto; max-width:72vw}
+    }
+
+    /* Countdown badge */
+    .drop{
+      position:absolute; left:50%; transform:translateX(-50%);
+      bottom:1.25rem; display:flex; gap:.5rem; align-items:center;
+      padding:.4rem .7rem; border:1px solid rgba(255,255,255,.18);
+      background:rgba(10,10,10,.6); backdrop-filter:blur(6px);
+      border-radius:.6rem; font:600 0.9rem/1.2 "Space Grotesk",system-ui;
+      color:#fff; letter-spacing:.02em;
+    }
+    .drop strong{font-weight:700; font-variant-numeric:tabular-nums}
+    .hero{position:relative}
+    .hero__media{position:relative}
+    .hero__media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),rgba(0,0,0,.55))}
+    /* Motion reduction: hide video, keep poster/overlay look */
+    @media (prefers-reduced-motion: reduce){
+      #heroVideo{display:none !important}
+    }
+  </style>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"Famous Since",
+    "url":"https://famous-since.vercel.app",
+    "logo":"https://famous-since.vercel.app/assets/logo.svg",
+    "sameAs":["https://instagram.com/yourhandle","https://www.tiktok.com/@yourhandle","https://x.com/yourhandle"]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "url":"https://famous-since.vercel.app",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://famous-since.vercel.app/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
   <!-- SVG symbols for icons (inline for easy use) -->
   <svg width="0" height="0" style="position:absolute" aria-hidden="true">
     <symbol id="icon-cart" viewBox="0 0 24 24"><path fill="currentColor" d="M7 4h-2l-1 2h2l3.6 7.59-1.35 2.45A1.99 1.99 0 0 0 9.99 19h9v-2h-8.42a.25.25 0 0 1-.22-.37L11.1 14h5.55a2 2 0 0 0 1.79-1.11l3.58-7.16A1 1 0 0 0 21.1 4H7zM7 20a2 2 0 1 0 .001 3.999A2 2 0 0 0 7 20zm10 0a2 2 0 1 0 .001 3.999A2 2 0 0 0 17 20z"/></symbol>
@@ -46,11 +126,20 @@
   <main id="main">
     <section class="hero" aria-label="Lookbook Reel">
       <div class="hero__media">
-        <video id="heroVideo" class="hero__video" autoplay muted loop playsinline preload="auto">
+        <!-- Poster improves LCP; video is hidden for reduced motion users -->
+        <video id="heroVideo" class="hero__video" autoplay muted loop playsinline preload="metadata"
+               poster="/assets/video/loop-city-poster.jpg">
           <source src="/assets/video/loop-city.mp4" type="video/mp4" />
         </video>
         <div class="hero__overlay"></div>
       </div>
+
+      <!-- Mascot overlay (shadow-play) -->
+      <div class="hero__fx">
+        <!-- Update path if needed -->
+        <img src="/assets/famous_since_mascot.png" alt="Famous Since mascot on throne" decoding="async" loading="eager" width="900" height="1200">
+      </div>
+
       <div class="container hero__content">
         <h1 class="hero__title">Famous Since <span id="rotator" aria-live="polite">______</span></h1>
         <p class="hero__sub">No cosign. No shortcuts. Just the grind.</p>
@@ -59,6 +148,12 @@
           <a href="https://instagram.com/" class="btn btn--ghost" target="_blank" rel="noopener">Follow on IG</a>
         </div>
       </div>
+
+      <!-- Countdown (edit the date in data-deadline; ISO 8601). If empty, defaults to 7 days from now. -->
+      <div class="drop" id="dropbar" data-deadline="">
+        <span>Next Drop:</span><strong id="countdown">--:--:--</strong>
+      </div>
+
       <button class="hero__toggle" aria-controls="heroVideo" aria-pressed="true">
         <svg class="icon"><use href="#icon-pause"/></svg>
         <span class="visually-hidden">Pause background video</span>
@@ -66,6 +161,9 @@
       <div class="marquee" aria-hidden="true">
         <div class="marquee__track">FAMOUS SINCE • NO COSIGN • 24/7 • FAMOUS SINCE • NO COSIGN • 24/7 •</div>
       </div>
+      <noscript>
+        <img src="/assets/video/loop-city-poster.jpg" alt="City texture background" width="1920" height="1080" />
+      </noscript>
     </section>
 
     <section class="social" aria-label="Social bar">
@@ -90,7 +188,28 @@
             <button class="chip" data-filter="Limited" role="tab">Limited</button>
           </div>
         </div>
-        <div id="grid" class="grid reveal"></div>
+
+        <!-- While JS filters/populates, announce busy state -->
+        <div id="grid" class="grid reveal" aria-busy="false"></div>
+
+        <!-- Optional product-card template with responsive image pattern -->
+        <template id="product-card-tpl">
+          <article class="card">
+            <a class="card__link" href="#" data-sku="">
+              <img class="card__img" alt=""
+                   src="/assets/img/placeholder_600.jpg"
+                   srcset="/assets/img/placeholder_400.jpg 400w,
+                           /assets/img/placeholder_800.jpg 800w,
+                           /assets/img/placeholder_1200.jpg 1200w"
+                   sizes="(max-width:600px) 50vw, (max-width:1024px) 33vw, 25vw"
+                   loading="lazy" decoding="async" width="600" height="750">
+              <div class="card__meta">
+                <h3 class="card__title"></h3>
+                <span class="card__price"></span>
+              </div>
+            </a>
+          </article>
+        </template>
       </div>
     </section>
 
@@ -192,6 +311,51 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
+  <!-- Your app -->
   <script defer src="/app.js"></script>
+
+  <!-- Minimal inline JS for quick wins (safe to keep or move into app.js) -->
+  <script>
+    // Countdown (reads data-deadline on #dropbar; if empty, defaults to 7 days from now)
+    (function(){
+      const el = document.getElementById('countdown');
+      const bar = document.getElementById('dropbar');
+      if(!el || !bar) return;
+      let deadlineStr = bar.getAttribute('data-deadline');
+      let deadline = deadlineStr ? new Date(deadlineStr) : new Date(Date.now() + 7*24*60*60*1000);
+      if(isNaN(deadline)) { bar.hidden = true; return; }
+      const tick = () => {
+        const t = deadline - new Date();
+        if (t <= 0) { el.textContent = "LIVE"; return; }
+        const h = String(Math.floor(t/3.6e6)).padStart(2,'0');
+        const m = String(Math.floor((t%3.6e6)/6e4)).padStart(2,'0');
+        const s = String(Math.floor((t%6e4)/1e3)).padStart(2,'0');
+        el.textContent = `${h}:${m}:${s}`;
+        requestAnimationFrame(()=>setTimeout(tick, 250));
+      };
+      tick();
+    })();
+
+    // Defer hero video playback until visible (for LCP)
+    (function(){
+      const v = document.getElementById('heroVideo');
+      if(!v) return;
+      const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (prefersReduced) { try{ v.pause(); }catch(e){} return; }
+      if ('IntersectionObserver' in window){
+        const io = new IntersectionObserver((entries)=>{
+          entries.forEach(e=>{
+            if(e.isIntersecting){
+              v.play().catch(()=>{});
+              io.disconnect();
+            }
+          });
+        },{rootMargin:'200px 0px'});
+        io.observe(v);
+      } else {
+        v.play().catch(()=>{});
+      }
+    })();
+  </script>
 </body>
 </html>
